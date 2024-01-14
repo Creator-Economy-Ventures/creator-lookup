@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape TikTok User</title>
+</head>
+<body>
+    <form action="/search" method="post" target="progress_iframe">
+        <label for="usernames">Enter TikTok Usernames (separate by newline or comma):</label><br>
+        <textarea id="usernames" name="usernames" rows="10" cols="30"></textarea><br>
+        <input type="submit" value="Scrape">
+    </form>
+    <a href="/download" class="btn btn-primary">Download CSV</a>
+
+    <iframe name="progress_iframe" width="100%" height="400"></iframe>
+</body>
+</html>
