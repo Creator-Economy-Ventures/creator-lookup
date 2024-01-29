@@ -74,13 +74,13 @@ def generate(hashtag, count):
     yield f"Step 8 complete! {len(email_total)} Emails Found<br>"
 
 
-    yield f"Step 9: Saving user information to MongoDB...<br>"
-    uri = "mongodb+srv://jason:jason@social-scraper.1stgz.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true"
-    new_users_added, total_unique_users, updated_users = insert_user_data_to_mongodb(uri, 'master_db', 'user_list', user_info)
-    yield f"Step 9 complete!<br>"
-    yield f"{new_users_added} new profiles information have been added to MongoDB.<br>"
-    yield f"{updated_users} existing profiles have been updated in MongoDB.<br>"
-    yield f"Total unique users in master database: {total_unique_users}.<br>"
+    # yield f"Step 9: Saving user information to MongoDB...<br>"
+    # uri = "mongodb+srv://jason:jason@social-scraper.1stgz.mongodb.net/?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true"
+    # new_users_added, total_unique_users, updated_users = insert_user_data_to_mongodb(uri, 'master_db', 'user_list', user_info)
+    # yield f"Step 9 complete!<br>"
+    # yield f"{new_users_added} new profiles information have been added to MongoDB.<br>"
+    # yield f"{updated_users} existing profiles have been updated in MongoDB.<br>"
+    # yield f"Total unique users in master database: {total_unique_users}.<br>"
 
 
     # Generate a CSV file
